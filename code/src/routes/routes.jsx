@@ -6,6 +6,8 @@ import ContactUs from "../containers/ContactUs"
 import Home from "../containers/Home"
 
 
+//路由控制
+
 const routes = (
     <Route path="/" component={App}>
         <IndexRoute component={Home}/>

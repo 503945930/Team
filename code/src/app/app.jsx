@@ -27,8 +27,11 @@ addLocaleData([
     ...zh
 ]);
 
-console.log("language", (navigator.language || navigator.browserLanguage).toLowerCase());
+//console.log("language", (navigator.language || navigator.browserLanguage).toLowerCase());
 
+
+
+//cookie 操作 后期封装成工具方法
 var arr,
     reg = new RegExp("(^| )" + "site-lang" + "=([^;]*)(;|$)");
 
