@@ -4,12 +4,27 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import RaisedButton from 'material-ui/RaisedButton';
 
-const Home = ({intl}) => (
+
+const Home = () => (
   <MuiThemeProvider muiTheme={getMuiTheme()}>
-  <div >
-    <RaisedButton label={<FormattedMessage id="home" />} />
-    <FormattedMessage id="home" />
-  </div>
+    <div>
+
+      <div className="site-container">
+          <div className="features">
+              features
+          </div>
+          <div className="apps">
+              apps
+          </div>
+          <div className="cases">
+              cases
+          </div>
+          <div className="goto-work">
+              goto-work
+          </div>
+      </div>
+    
+    </div>
  </MuiThemeProvider>
 )
 
