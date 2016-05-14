@@ -14,3 +14,10 @@
 
 
 ![](./design/Team.png)
+
+
+## 页面结构
+
+* [home](http://503945930.github.io/Team/html/index.html)
+* [team](http://503945930.github.io/Team/html/team.html)
+* [contactus](http://503945930.github.io/Team/html/contactus.html)
