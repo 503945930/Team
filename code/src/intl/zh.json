@@ -1,0 +1,8 @@
+{
+  "locales": "zh",
+  "messages" :{
+    "home":"首页",
+    "team": "团队介绍",
+    "contactus": "联系我们"
+  }
+}

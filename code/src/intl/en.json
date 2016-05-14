@@ -1,0 +1,8 @@
+{
+  "locales": "en",
+  "messages" :{
+    "home":"Home",
+    "team": "Team",
+    "contactus": "Contact Us"
+  }
+}
