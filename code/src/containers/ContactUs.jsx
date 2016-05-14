@@ -10,23 +10,23 @@ const ContactUs = () => (
     <MuiThemeProvider muiTheme={getMuiTheme()}>
         <div>
 
-            <div class="site-container">
-                <div class="intro">
+            <div className="site-container">
+                <div className="intro">
                     1
                 </div>
-                <div class="intro">
+                <div className="intro">
                     2
                 </div>
-                <div class="intro">
+                <div className="intro">
                     3
                 </div>
-                <div class="intro">
+                <div className="intro">
                     4
                 </div>
 
-                <div class="information">
+                <div className="information">
                     表单
-                    <form class="" action="index.html" method="post"></form>
+                    <form className="" action="index.html" method="post"></form>
                 </div>
 
             </div>

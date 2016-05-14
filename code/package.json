@@ -1,10 +1,10 @@
 {
-  "name": "webpack-material-ui-boilerplate",
+  "name": "Team-React",
   "version": "0.0.1",
-  "description": "Sample project that uses material-ui",
+  "description": "this is website ,it's use react,react-router,material-ui,react-intl,webpack",
   "repository": {
     "type": "git",
-    "url": "https://github.com/503945930/webpack-material-ui-boilerplate.git"
+    "url": "https://github.com/503945930/Team.git"
   },
   "scripts": {
     "start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
