@@ -35,7 +35,7 @@ const config = {
     },
     devtool: 'eval',
     output: {
-      publicPath: "/",
+        publicPath: "/",
         path: PATHS.build, //Path of output file
         filename: 'js/app.js', //Name of output file
     },

@@ -1,5 +1,6 @@
 import '../css/reset.css';
 import '../css/index.css';
+import '../css/image-gallery.css';
 
 import React from 'react';
 import ReactDOM from 'react-dom';

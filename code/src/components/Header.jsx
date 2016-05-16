@@ -2,6 +2,7 @@ import React, {Component} from "react"
 import {Link} from "react-router"
 import RaisedButton from "material-ui/FlatButton"
 import {FormattedMessage} from "react-intl"
+import Gallery from "./Gallery"
 
 class Header extends Component {
   constructor(props) {
@@ -11,12 +12,13 @@ class Header extends Component {
     }
   }
 
+
+
   // 打开语言下拉选择
-  handleShowLanghOnclick(e){
+  handleShowLanghOnclick(e) {
     this.setState({
       showLang: !this.state.showLang
     });
-
 
   }
   //选择语言
@@ -51,37 +53,38 @@ class Header extends Component {
             <ul className="nav navbar-nav">
               <li className="active">
                 <Link to="/">
-                  <FormattedMessage id = "home" />
+                  <FormattedMessage id="home"/>
                 </Link>
               </li>
               <li>
                 <Link to="/About">
-                  <FormattedMessage id = "about" />
+                  <FormattedMessage id="about"/>
                 </Link>
               </li>
               <li>
                 <Link to="/Contactus">
-                  <FormattedMessage id = "contactus" />
+                  <FormattedMessage id="contactus"/>
                 </Link>
               </li>
               <li>
                 <Link to="/">
-                  <FormattedMessage id = "blog" />
+                  <FormattedMessage id="blog"/>
                 </Link>
               </li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li className="dropdown">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button"
-                  onClick = {this.handleShowLanghOnclick.bind(this)} aria-haspopup="true" aria-expanded="false" >
+                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" onClick={this.handleShowLanghOnclick.bind(this)} aria-haspopup="true" aria-expanded="false">
                   语言<span className="caret"></span>
                 </a>
-                <ul className= {this.state.showLang ? 'dropdown-menu hidden' : 'dropdown-menu visible'} >
+                <ul className={this.state.showLang
+                  ? 'dropdown-menu hidden'
+                  : 'dropdown-menu visible'}>
                   <li>
-                    <a href="#" onClick={this.handleLanghOnclick.bind(this,"zh")}>中文版</a>
+                    <a href="#" onClick={this.handleLanghOnclick.bind(this, "zh")}>中文版</a>
                   </li>
                   <li>
-                    <a href="#" onClick={this.handleLanghOnclick.bind(this,"en")}>English</a>
+                    <a href="#" onClick={this.handleLanghOnclick.bind(this, "en")}>English</a>
                   </li>
                 </ul>
               </li>
@@ -90,7 +93,8 @@ class Header extends Component {
         </div>
 
         <div className="jumbotron">
-          <div className="item"></div>
+          <Gallery />
+        
         </div>
       </header>
 
