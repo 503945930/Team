@@ -9,6 +9,7 @@ import {Router, browserHistory} from 'react-router';
 //import Main from './Main'; // Our custom react component
 import routes from '../routes/routes'
 import {addLocaleData, IntlProvider} from 'react-intl';
+import CookieUtils from "../utils/CookieUtils"
 
 import en from 'react-intl/locale-data/en';
 import fr from 'react-intl/locale-data/fr';
@@ -23,28 +24,31 @@ import localeEn from '../intl/en.json';
 injectTapEventPlugin();
 
 addLocaleData([
-    ...en,
-    ...fr,
-    ...es,
-    ...zh
+  ...en,
+  ...fr,
+  ...es,
+  ...zh
 ]);
 
 //console.log("language", (navigator.language || navigator.browserLanguage).toLowerCase());
 
-
-
 //cookie 操作 后期封装成工具方法
-var arr,
-    reg = new RegExp("(^| )" + "site-lang" + "=([^;]*)(;|$)");
+// var arr,
+//     reg = new RegExp("(^| )" + "site-lang" + "=([^;]*)(;|$)");
+//
+// let intl=localeEn;
+// if (arr = document.cookie.match(reg)){
+//   console.log(arr[2]);
+//   if(unescape(arr[2]) === "zh"){
+//      intl = localeZh;
+//   }
+// }
 
-let intl=localeEn;
-if (arr = document.cookie.match(reg)){
-  console.log(arr[2]);
-  if(unescape(arr[2]) === "zh"){
-     intl = localeZh;
-  }
+let intl = localeEn;
+if (CookieUtils.getCookieByName("site-lang") === "zh") {
+  intl = localeZh;
 }
-
+//console.log(CookieUtils.getCookieByName("site-lang"));
 
 // if((navigator.language || navigator.browserLanguage).toLowerCase() !== "zh-cn"){
 //     console.log("!==zh-cn");
@@ -54,6 +58,6 @@ if (arr = document.cookie.match(reg)){
 // Render the main app react component into the app div.
 // For more details see: https://facebook.github.io/react/docs/top-level-api.html#react.render
 ReactDOM.render(
-    <IntlProvider locale={intl.locales} messages={intl.messages}>
-    <Router history={browserHistory} routes={routes}/>
+  <IntlProvider locale={intl.locales} messages={intl.messages}>
+  <Router history={browserHistory} routes={routes}/>
 </IntlProvider>, document.getElementById('app'));

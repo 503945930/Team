@@ -3,6 +3,8 @@ import {Link} from "react-router"
 import RaisedButton from "material-ui/FlatButton"
 import {FormattedMessage} from "react-intl"
 import Gallery from "./Gallery"
+import CookieUtils from "../utils/CookieUtils"
+
 
 class Header extends Component {
   constructor(props) {
@@ -24,11 +26,14 @@ class Header extends Component {
     e.preventDefault();
     //  document.cookie = "site-lang" + "=" + "zh"  + "; path=/";
     //writeCookie("site-lang", "zh");
-    let Days = 30;
-    let exp = new Date();
-    exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
-    document.cookie = "site-lang" +
-      "=" + escape(locale) + ";expires=" + exp.toGMTString();
+    // let Days = 30;
+    // let exp = new Date();
+    // exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+    // document.cookie = "site-lang" +
+    //   "=" + escape(locale) + ";expires=" + exp.toGMTString();
+
+
+    CookieUtils.writeCookie("site-lang",locale);
 
     window.location.reload();
     //console.log(document.cookie);
