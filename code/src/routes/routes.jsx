@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route, IndexRoute, Link} from 'react-router'
 import App from "../containers/App"
-import Team from "../containers/Team"
+import About from "../containers/About"
 import ContactUs from "../containers/ContactUs"
 import Home from "../containers/Home"
 
@@ -11,7 +11,7 @@ import Home from "../containers/Home"
 const routes = (
     <Route path="/" component={App}>
         <IndexRoute component={Home}/>
-        <Route path="Team" component={Team}/>
+        <Route path="About" component={About}/>
         <Route path="Contactus" component={ContactUs}/>
     </Route>
 )

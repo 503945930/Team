@@ -3,7 +3,7 @@ import {FormattedMessage} from "react-intl"
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
-const Team = () => (
+const About = () => (
     <MuiThemeProvider muiTheme={getMuiTheme()}>
         <div>
 
@@ -18,4 +18,4 @@ const Team = () => (
     </MuiThemeProvider>
 )
 
-export default Team
+export default About

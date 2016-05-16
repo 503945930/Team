@@ -35,6 +35,7 @@ const config = {
     },
     devtool: 'eval',
     output: {
+      publicPath: "/",
         path: PATHS.build, //Path of output file
         filename: 'js/app.js', //Name of output file
     },
@@ -64,7 +65,13 @@ const config = {
         }, {
             test: /\.json$/,
             loader: 'json'
-        }]
+        },{
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack'
+        ]
+    }]
     },
     //eslint config options. Part of the eslint-loader package
     eslint: {

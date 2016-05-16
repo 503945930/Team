@@ -83,7 +83,7 @@ a, body {
 .site-header .jumbotron .item {
   width: 100%;
   height: 100%;
-  background-image: url(../images/hero.jpg);
+  background-image: url(../images/hero-2nd@2x.jpg);
   background-position: center top;
   background-size: cover;
 }
@@ -109,7 +109,3 @@ a, body {
     border-bottom: 0;
   }
 }
-
-
-.hidden { display:none; }
-.visible {display:block;}

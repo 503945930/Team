@@ -1,31 +1,44 @@
 import React from "react"
-import { FormattedMessage } from "react-intl"
+import {FormattedMessage} from "react-intl"
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import RaisedButton from 'material-ui/RaisedButton';
-
 
 const Home = () => (
   <MuiThemeProvider muiTheme={getMuiTheme()}>
     <div>
 
-      <div className="site-container">
-          <div className="features">
-              features
+      <div className="site-main">
+        <div className="container">
+          <div className="row marketing">
+            <div className="col-lg-6">
+              <h4>Subheading</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+              <h4>Subheading</h4>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+              <h4>Subheading</h4>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+            <div class="col-lg-6">
+              <h4>Subheading</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+              <h4>Subheading</h4>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+              <h4>Subheading</h4>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
           </div>
-          <div className="apps">
-              apps
-          </div>
-          <div className="cases">
-              cases
-          </div>
-          <div className="goto-work">
-              goto-work
-          </div>
+        </div>
+
       </div>
-    
+
     </div>
- </MuiThemeProvider>
+  </MuiThemeProvider>
 )
 
 export default Home

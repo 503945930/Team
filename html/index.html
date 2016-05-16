@@ -2,90 +2,117 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="./css/reset.css" media="screen" title="no title" charset="utf-8">
-    <style media="screen">
-        .body {
-            overflow-y: scroll;
-            overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-        }
-        /*site-header*/
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./css/reset.css" media="screen" title="no title" charset="utf-8">
+  <style media="screen">
+    .body {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    /*site-header*/
 
-        .site-header {
-            /*padding: 0 15px 0 20px!important;*/
-        }
+    .site-header {
+      /*padding: 0 15px 0 20px!important;*/
+    }
 
-        .site-header .navbar {
-            display: flex;
-            width: 100%;
-            height: 50px;
-        }
+    .site-header .navbar {
+      display: flex;
+      width: 100%;
+      height: 50px;
+    }
 
-        .site-header .navbar .navbar-header {
-            background-color: #3A87AD;
-            flex: 2;
-        }
+    .site-header .navbar .navbar-header {
+      flex: 2;
+    }
 
-        .site-header .navbar .collapse {
-            flex: 10;
-            background-image: -webkit-linear-gradient(top, #62C462, #51A351);
-            background-image: -o-linear-gradient(top, #62C462, #51A351);
-            background-image: -moz-linear-gradient(top, #62C462, #51A351);
-            background-image: linear-gradient(top, #62C462, #51A351);
-        }
+    .site-header .navbar .collapse {
+      flex: 10;
+      background-image: -webkit-linear-gradient(top, #62C462, #51A351);
+      background-image: -o-linear-gradient(top, #62C462, #51A351);
+      background-image: -moz-linear-gradient(top, #62C462, #51A351);
+      background-image: linear-gradient(top, #62C462, #51A351);
+    }
 
-        .site-header .banner {
-            width: 100%;
-            height: 700px;
-            background-color: #795548;
-        }
-        /*container*/
+    .site-header .banner {
+      width: 100%;
+      height: 700px;
+      background-color: #795548;
+    }
+    /*container*/
 
-        .site-container .features {
-            margin-top: 10px;
-            width: 100%;
-            height: 640px;
-            background-color: #00BCD4;
-        }
+    .site-container .features {
+      margin-top: 10px;
+      width: 100%;
+      height: 640px;
+      background-color: #00BCD4;
+    }
 
-        .site-container .apps {
-            width: 100%;
-            height: 620px;
-            background-color: #9E9E9E;
-        }
+    .site-container .apps {
+      width: 100%;
+      height: 620px;
+      background-color: #9E9E9E;
+    }
 
-        .site-container .cases {
-            width: 100%;
-            height: 620px;
-            background-color: #607D8B;
-        }
+    .site-container .cases {
+      width: 100%;
+      height: 620px;
+      background-color: #607D8B;
+    }
 
-        .site-container .goto-work {
-            width: 100%;
-            height: 620px;
-            background-color: #4CAF50;
-        }
-        /*footer*/
+    .site-container .goto-work {
+      width: 100%;
+      height: 620px;
+      background-color: #4CAF50;
+    }
+    /*footer*/
 
-        .site-footer {
-            margin-top: 10px;
-            width: 100%;
-        }
+    .site-footer {
+      margin-top: 10px;
+      width: 100%;
+    }
 
-        .site-footer .link {
-            width: 100%;
-            height: 330px;
-            background-color: #00BCD4;
-        }
+    .site-footer .link {
+      width: 100%;
+      height: 330px;
+      background-color: #00BCD4;
+    }
 
-        .site-footer .copyright {
-            width: 100%;
-            background-color: #1C1E1F;
-            height: 70px
-        }
-    </style>
+    .site-footer .copyright {
+      width: 100%;
+      background-color: #1C1E1F;
+      height: 70px
+    }
+
+    a {
+      color: #03A9F4;
+      cursor: pointer;
+      -webkit-transition: color 218ms cubic-bezier(.42, 0, .58, 1);
+      -o-transition: color 218ms cubic-bezier(.42, 0, .58, 1);
+      transition: color 218ms cubic-bezier(.42, 0, .58, 1);
+      background: 0 0;
+      text-decoration: none;
+    }
+
+    .site-header .navbar-brand {
+      display: block;
+      margin: auto;
+      width: 150px;
+      padding: 0;
+      text-indent: -9999px;
+      background-image: url(https://dn-st.teambition.net/site/v2.0.0/images/global/logo.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+    }
+
+    .navbar-brand {
+      padding: 15px 16px;
+      font-size: 15px;
+      line-height: 20px;
+      height: 50px;
+    }
+  </style>
 
 
 
@@ -93,46 +120,67 @@
 
 <body>
 
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar" role="navigation">
-                <div class="navbar-header">
-                    Logo
-                </div>
-                <div class="collapse navbar-collapse">
-                    nav
-                </div>
-            </nav>
-            <div class="banner">
-                banner
-            </div>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" role="navigation">
+        <div class="navbar-header">
+          <a class="navbar-brand on-" href="/"></a>
         </div>
-    </header>
-    <div class="site-container">
-        <div class="features">
-            features
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-button list-inline">
+            <li class="switch-locale-wrap">
+              <div class="dropdown switch-locale"><a class="dropdown-toggle zh" data-toggle=" ">中文版</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/en/" class="en">English</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="btn btn-default btn-sm login" href="#" >登录</a></li>
+            <li><a class="btn btn-default btn-sm signup" href="#" >免费注册</a></li>
+          </ul>
+
+
+
+
+          <ul class="nav navbar-nav">
+            <li><a href="/tour" >功能</a></li>
+            <li><a href="/business" >企业版</a></li>
+            <li><a href="/apps" >下载</a></li>
+            <li><a href="#" >社区</a></li>
+            <li><a href="#" >博客</a></li>
+          </ul>
         </div>
-        <div class="apps">
-            apps
-        </div>
-        <div class="cases">
-            cases
-        </div>
-        <div class="goto-work">
-            goto-work
-        </div>
+      </nav>
+      <div class="banner">
+        banner
+      </div>
+    </div>
+  </header>
+  <div class="site-container">
+    <div class="features">
+      features
+    </div>
+    <div class="apps">
+      apps
+    </div>
+    <div class="cases">
+      cases
+    </div>
+    <div class="goto-work">
+      goto-work
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="link">
+      link
+    </div>
+    <div class="copyright">
+      copyright
     </div>
 
-    <footer class="site-footer">
-        <div class="link">
-            link
-        </div>
-        <div class="copyright">
-            copyright
-        </div>
 
-
-    </footer>
+  </footer>
 
 </body>
 
