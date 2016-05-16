@@ -36,6 +36,15 @@ a, body {
   line-height: 40px;
 }
 
+/*开始*/
+
+.site-main .cooperate-list {
+  margin-top: 10px
+}
+
+
+
+
 /* Custom page footer */
 
 .site-footer .copyright {
@@ -52,8 +61,7 @@ a, body {
   text-align: center;
   margin-top: 17px;
 }
-
-.site-footer .copyright  a.icon {
+.site-footer .copyright a.icon {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -68,6 +76,46 @@ a, body {
 }
 
 
+
+
+
+
+/*footer开始*/
+.site-footer .doc {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0 10px;
+}
+
+
+
+
+.site-footer .doc .nav-group{
+  list-style-type: none;
+}
+
+.site-footer .doc .nav-group h4 {
+  color: #d9d9d9;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.site-footer .doc .nav-group>li {
+  margin-bottom: 20px;
+}
+
+.site-footer .doc .nav-group>li>a {
+  -webkit-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+  text-decoration: none;
+  color: #777;
+}
+
+.site-footer .doc .nav-group>li>a:hover {
+  color: #ededed;
+}
+
 /* Customize container */
 
 
@@ -80,7 +128,6 @@ a, body {
   height: 700px;
   border-bottom: 1px solid #e5e5e5;
   margin-top: 50px;
-  background-color: white;
 }
 .site-header .jumbotron .item {
   width: 100%;
@@ -89,6 +136,10 @@ a, body {
   background-position: center top;
   background-size: cover;
 }
+.site-header .navbar-fixed-top {
+  background-color: white;
+}
+
 /* Supporting marketing content */
 
 .marketing {
