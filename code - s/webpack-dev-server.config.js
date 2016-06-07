@@ -8,6 +8,7 @@ const PATHS = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build')
 };
+const PORT = (process.env.PORT || 3000)
 
 
 const config = {
@@ -30,7 +31,7 @@ const config = {
     devtool: 'eval',
     hot: true, //Live-reload
     inline: true,
-    port: 3000, //Port Number
+    port: PORT, //Port Number
     host: 'localhost', //Change to '0.0.0.0' for external facing server,
     historyApiFallback: true
 
@@ -80,5 +81,5 @@ const config = {
     configFile: '.eslintrc',
   },
 };
-
+console.log(`Listening at ${PORT}`)
 module.exports = config;

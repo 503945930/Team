@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const HtmlwebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -10,6 +11,8 @@ const PATHS = {
   app: path.join(__dirname, 'app'),
   build: path.join(__dirname, 'build')
 };
+
+const PORT = (process.env.PORT || 8000)
 
 
 const config = {
@@ -93,4 +96,5 @@ const config = {
     configFile: '.eslintrc', //Rules for eslint
   },
 };
+
 module.exports = config;
