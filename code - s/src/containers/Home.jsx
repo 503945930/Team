@@ -128,7 +128,7 @@ class Home extends React.Component {
                     <FormattedMessage id="parentDiscuzzA"/>
                   </span>
                   <img className="quoteup" src="../images/quote.jpg" />
-                  <img className="quoteDown" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
                 <li className={discuzzClass}>
                   <span className="title"><FormattedMessage id="parentB"/></span>
@@ -136,6 +136,8 @@ class Home extends React.Component {
                   <span className="content">
                     <FormattedMessage id="parentDiscuzzB"/>
                   </span>
+                  <img className="quoteup" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
                 <li className={discuzzClass}>
                   <span className="title"><FormattedMessage id="parentC"/><FormattedMessage id="parentB"/></span>
@@ -143,6 +145,8 @@ class Home extends React.Component {
                   <span className="content">
                     <FormattedMessage id="parentDiscuzzC"/>
                   </span>
+                  <img className="quoteup" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
               </ul>
             </div>
@@ -158,6 +162,8 @@ class Home extends React.Component {
                   <span className="content">
                     <FormattedMessage id="studentDiscuzzD"/>
                   </span>
+                  <img className="quoteup" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
                 <li className={discuzzClass}>
                   <span className="title"><FormattedMessage id="studentE"/></span>
@@ -165,6 +171,8 @@ class Home extends React.Component {
                   <span className="content">
                     <FormattedMessage id="studentDiscuzzE"/>
                   </span>
+                  <img className="quoteup" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
                 <li className={discuzzClass}>
                   <span className="title"><FormattedMessage id="studentF"/></span>
@@ -172,6 +180,8 @@ class Home extends React.Component {
                   <span className="content">
                     <FormattedMessage id="studentDiscuzzF"/>
                   </span>
+                  <img className="quoteup" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
               </ul>
             </div>
