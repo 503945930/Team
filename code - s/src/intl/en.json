@@ -1,0 +1,9 @@
+{
+  "locales": "en",
+  "messages" :{
+    "home":"Home",
+    "about": "About",
+    "contactus": "Contact",
+    "blog": "Blog"
+  }
+}

@@ -1,0 +1,58 @@
+.site-main .intro-logo {
+  display: block;
+  padding-top: 60px;
+  margin-left: 60px;
+  position: relative;
+}
+
+.site-main .intro-logo img{
+  display: inline-block;
+}
+
+.site-main .intro-list{
+  width: 80%;
+  margin: 31px auto;
+  height: auto;
+
+
+}
+.site-main .intro-wrap{
+  background:  #fafafa;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #6E6060;
+}
+.site-main .intro-list span{
+  color: #4a4a4a4a;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
+
+/*partner*/
+
+.site-main .partner-list {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.site-main .partner span {
+  font-size: 20px;
+  display: block;
+  margin: 20px 0 40px 60px
+}
+.site-main .partner-list .item:nth-child(odd) {
+  height: 42px;
+  width: 700px;
+  margin-top: 40px;
+}
+.site-main .partner-list .item:nth-child(even) {
+  height: 42px;
+  width: 300px;
+  margin-top: 40px;
+  justify-content: center
+}

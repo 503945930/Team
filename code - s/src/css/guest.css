@@ -1,0 +1,40 @@
+
+
+
+.site-main .guest-logo {
+  display: block;
+  margin-top: 60px;
+  margin-left: 60px
+}
+
+
+.site-main .guest-list{
+  display: flex;
+  flex-wrap: wrap;
+  height: 1176px;
+  width: 80%;
+  margin: 0 auto;
+  align-content:flex-start;
+}
+
+.site-main .guest-list .item{
+  width: 200px;
+  height: 300px;
+  margin:0 20px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 5px #9b9b9b;
+  margin-top: 44px;
+  text-align: center;
+}
+
+.site-main .guest-list .item span{
+  display: block;
+  margin-top: 10px;
+}
+.site-main .guest-list .item span:first-child{
+  font-size: 20px;
+}
+
+.site-main .guest-list .item span:last-child{
+  color: #8B7777;
+}
