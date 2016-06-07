@@ -127,6 +127,8 @@ class Home extends React.Component {
                   <span className="content">
                     <FormattedMessage id="parentDiscuzzA"/>
                   </span>
+                  <img className="quoteup" src="../images/quote.jpg" />
+                  <img className="quoteDown" src="../images/quote.jpg" />
                 </li>
                 <li className={discuzzClass}>
                   <span className="title"><FormattedMessage id="parentB"/></span>

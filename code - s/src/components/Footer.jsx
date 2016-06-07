@@ -46,7 +46,7 @@ class Footer extends Component {
           <div className="copyright">
             <a href="">&copy;
               <FormattedMessage id='footerCopyRight'/></a>
-            <img src="./images/logo.png" height="40px" alt=""/></div>
+            <img src="./images/logo.png" height="60px" alt=""/></div>
         </div>
       </footer>
 
