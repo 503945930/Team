@@ -2,6 +2,9 @@
   display: block;
   margin-top: 60px;
   margin-left: 60px;
+
+}
+.site-main .about-logo .container{
   position: relative;
 }
 
@@ -19,7 +22,7 @@
 
 
 .site-main .about-list {
-  width: 80%;
+  max-width:980px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 140px;

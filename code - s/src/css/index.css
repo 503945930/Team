@@ -19,53 +19,26 @@ a {
   text-decoration: none;
 }
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /*common end*/
 
 
 /*header*/
 
 
-/*.site-header {
-  height: 60px;
-  background: #003265;
-  color: #fff;
-  font-size: 16px;
-}
-.site-header .logo{
-  margin-left: 34px;
-  margin-top: 10px
-}
 
-.site-header nav{
-
-}
-.site-header nav ul{
-  list-style-type: none;
-  margin-top: 20px
-}
-
-
-.site-header nav ul li {
-  float: left;
-  margin-left: 15%;
-}
-.site-header nav ul li:first-child{
-    margin-left: 50%;
-}
-
-.site-header nav ul li a{
-    color: #fff;
-}
-.site-header nav ul li a:hover{
-    color: #65cb32;
-    opacity: 80%;
-    text-decoration: none;
-}*/
 
 
 .site-header{
-  position: relative;
+
   background-color: #003265;
+}
+.site-header .container{
+  position: relative;
 }
 .site-header .logo {
   position: absolute;
@@ -250,7 +223,7 @@ ul.topnav li.icon {display: none;}
   justify-content: space-between;
 }
 .site-main .dizcuss ul li {
-  width: 300px;
+  width: 280px;
   height: auto;
   border-radius: 20px;
   box-shadow: 4px 4px 5px #9b9b9b;

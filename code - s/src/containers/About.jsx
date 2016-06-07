@@ -5,11 +5,13 @@ import {FormattedMessage,FormattedHTMLMessage} from "react-intl"
 const About = () => (
   <article className="site-main">
     <div className="banner">
-      <img src="./images/team-header.png" alt="" height="500px" width="100%"/>
+      <img src="./images/team-header.png" width="100%" />
     </div>
     <div className="about-logo">
+      <div className="container">
       <img src="./images/Joycan-Logo.png" width="60px" height="64px" alt=""/>
       <FormattedMessage id="team" />
+      </div>
     </div>
     <div className="about-list">
       <div className="a">
@@ -55,8 +57,8 @@ const About = () => (
 
 
       </div>
-
     </div>
+
 
   </article>
 

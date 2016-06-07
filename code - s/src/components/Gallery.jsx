@@ -20,16 +20,16 @@ class Gallery extends Component {
 
       <Slider {...settings}>
         <div class="pic">
-          <img src="../images/header1.png" height="600px" width="100%" alt="" />
+          <img src="../images/header1.png"  width="100%" alt="" />
         </div>
         <div class="pic">
-          <img src="../images/header2-campus.png" height="600px" width="100%" alt="" />
+          <img src="../images/header2-campus.png" width="100%"  alt="" />
         </div>
         <div class="pic">
-          <img src="../images/header3-world.png" height="600px" width="100%" alt="" />
+          <img src="../images/header3-world.png" width="100%"  alt="" />
         </div>
         <div class="pic">
-          <img src="../images/header4.png" height="600px" width="100%" alt="" />
+          <img src="../images/header4.png"  width="100%" alt="" />
         </div>
       </Slider>
 

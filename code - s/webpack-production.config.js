@@ -3,6 +3,7 @@ const path = require('path');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const HtmlwebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const PATHS = {
@@ -72,7 +73,13 @@ const config = {
       template: './src/index.html',
       inject: 'body'
     }),
-    new ExtractTextPlugin("css/[name].css")
+    new ExtractTextPlugin("css/[name].css"),
+     new CopyWebpackPlugin([
+       {
+         from:'./src/images',
+         to:'./images'
+       }
+     ])
 
 
 

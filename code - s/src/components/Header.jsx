@@ -47,6 +47,7 @@ class Header extends Component {
   render() {
     return (
       <header className="site-header navbar navbar-static-top bs-docs-nav " id="top" role="banner">
+        <div className="container">
         <div className="logo float-left">
           <Link to="/">
             <img src="./images/logo.png" alt="" height="40px"/>
@@ -67,6 +68,7 @@ class Header extends Component {
             <a href="#" onTouchTap={this.handleTouchTap.bind(this)} style={{fontSize:15}}>☰</a>
           </li>
         </ul>
+      </div>
       </header>
     )
   }

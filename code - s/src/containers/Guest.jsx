@@ -34,11 +34,13 @@ class Guest extends React.Component {
 
     return (
       <article className="site-main">
-        <div className="banner">
-          <img src="./images/guest-header.png" alt="" height="500px" width="100%"/>
+        <div className="banner" >
+          <img src="./images/guest-header.png"  width="100%" alt="" />
         </div>
         <div className="guest-logo">
+          <div className="container">
           <img src="./images/Joycan-Logo.png" width="60px" height="64px" alt=""/>
+          </div>
         </div>
         <div className="guest-list">
           {guestList}
