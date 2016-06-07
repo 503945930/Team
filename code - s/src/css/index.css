@@ -127,9 +127,9 @@ ul.topnav li.icon {display: none;}
   /* 标准的语法 */
   opacity: 70%;
 }
-.site-main .intro-logo {
+.site-main .home-logo {
   width: 230px;
-  height: 90px;
+  height: 70px;
   margin: 0 auto;
   padding-top: 75px;
   padding-bottom: 47px;

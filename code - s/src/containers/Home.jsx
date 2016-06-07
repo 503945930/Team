@@ -55,8 +55,8 @@ class Home extends React.Component {
         </div>
         <div className="intro">
           <div className="container">
-            <div className="intro-logo animated fadeIn">
-              <img src="./images/logo.png" alt="" height="90px"/>
+            <div className="home-logo animated fadeIn">
+              <img src="./images/logo.png" alt="" height="70px"/>
             </div>
             <span><FormattedMessage id="webFunction"/></span>
             <div className="clean"></div>
