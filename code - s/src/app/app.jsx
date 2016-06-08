@@ -55,6 +55,9 @@ addLocaleData([
 //   }
 // }
 
+console.log("m-console.lg");
+
+
 let intl = localeZh;
 if (CookieUtils.getCookieByName("site-lang") === "zh") {
   intl = localeZh;

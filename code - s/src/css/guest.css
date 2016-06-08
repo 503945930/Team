@@ -1,11 +1,18 @@
 
 
 
-.site-main .guest-logo {
-  display: block;
-  margin-top: 60px;
-  margin-left: 60px
+.site-main .guest-logo img{
+  display: inline-block;
 }
+.site-main .guest-logo span{
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: 90px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 
 
 .site-main .guest-list{

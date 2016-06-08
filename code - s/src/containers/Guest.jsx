@@ -37,9 +37,10 @@ class Guest extends React.Component {
         <div className="banner" >
           <img src="./images/guest-header.png"  width="100%" alt="" />
         </div>
-        <div className="guest-logo">
+        <div className="about-logo">
           <div className="container">
           <img src="./images/Joycan-Logo.png" width="60px" height="64px" alt=""/>
+          <FormattedMessage id="guest" />
           </div>
         </div>
         <div className="guest-list">

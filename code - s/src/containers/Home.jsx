@@ -16,12 +16,12 @@ class Home extends React.Component {
   componentDidMount() {
     // this.node = this._dizcuss;
     // console.log(this.node.offsetHeight);
-    window.addEventListener('scroll', this.handleScroll.bind(this));
+  //  window.addEventListener('scroll', this.handleScroll.bind(this));
 
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll.bind(this));
+  //  window.removeEventListener('scroll', this.handleScroll.bind(this));
   }
 
   handleScroll(event) {
@@ -112,9 +112,7 @@ class Home extends React.Component {
         </div>
         <div className="clean"></div>
 
-        <div className="pic">
-          <img src="./images/nyc-background-img.png" height="600px" width="100%" alt=""/>
-        </div>
+        <div className="pic"><img src="../images/nyc-background-img.png"  width="100%" alt=""/></div>
 
         <div className="dizcuss">
           <div className="container">
@@ -140,7 +138,7 @@ class Home extends React.Component {
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
                 <li className={discuzzClass}>
-                  <span className="title"><FormattedMessage id="parentC"/><FormattedMessage id="parentB"/></span>
+                  <span className="title"><FormattedMessage id="parentC"/></span>
                   <span className="subtitle"><FormattedMessage id="parentTitleC"/></span>
                   <span className="content">
                     <FormattedMessage id="parentDiscuzzC"/>
