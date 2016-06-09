@@ -16,12 +16,12 @@ class Home extends React.Component {
   componentDidMount() {
     // this.node = this._dizcuss;
     // console.log(this.node.offsetHeight);
-  //  window.addEventListener('scroll', this.handleScroll.bind(this));
+    window.addEventListener('scroll', this.handleScroll.bind(this));
 
   }
 
   componentWillUnmount() {
-  //  window.removeEventListener('scroll', this.handleScroll.bind(this));
+    window.removeEventListener('scroll', this.handleScroll.bind(this));
   }
 
   handleScroll(event) {
