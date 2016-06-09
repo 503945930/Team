@@ -4,74 +4,43 @@ import {FormattedMessage, FormattedHTMLMessage} from "react-intl"
 import classNames from 'classnames';
 import Gallery from '../components/Gallery'
 import Partner from '../components/Partner';
+import ScrollEffect from '../js/scroll-effects.jsx';
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      scrollDicuzz: false
-    };
-  }
-
-  componentDidMount() {
-    // this.node = this._dizcuss;
-    // console.log(this.node.offsetHeight);
-    window.addEventListener('scroll', this.handleScroll.bind(this));
-
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll.bind(this));
-  }
-
-  handleScroll(event) {
-    //console.log(this._dizcuss);
-    let scrollTop = event.srcElement.body.scrollTop;
-
-    // console.log("scrollTop",scrollTop);
-    // console.log("offsetHeight",this._dizcuss.offsetHeight);
-    // console.log("offsetTop",this._dizcuss.offsetTop);
-    if (scrollTop >= this._dizcuss.offsetTop - this._dizcuss.offsetHeight) {
-
-      this.setState({scrollDicuzz: true})
-    } else {
-      this.setState({scrollDicuzz: false})
-    }
-    //console.log("scrollTop",scrollTop);
-  }
 
   //"animated fadeInUp"
   render() {
 
-    let discuzzClass = classNames({
-      "": !this.state.scrollDicuzz,
-      "animated fadeInUp": this.state.scrollDicuzz
-    })
-
     return (
       <article className="site-main">
-        <div className="banner">
+        <div className="banner animated fadeIn">
           <Gallery/>
         </div>
         <div className="intro">
           <div className="container">
-            <div className="home-logo animated fadeIn">
+            <ScrollEffect className="home-logo" animate="fadeIn">
               <img src="./images/logo.png" alt="" height="70px"/>
-            </div>
-            <span><FormattedMessage id="webFunction"/></span>
+            </ScrollEffect>
+
+            <ScrollEffect className="value prop" animate="fadeInUp">
+              <span><FormattedMessage id="webFunction"/></span>
+            </ScrollEffect>
             <div className="clean"></div>
-            <div className="student float-left animated bounceInLeft">
+
+            <ScrollEffect className="student float-left" animate="bounceInLeft">
               <div className="">
                 <img src="./images/student.png" height="100px" alt=""/>
               </div>
-            </div>
-            <div className="parent float-right animated bounceInRight">
+            </ScrollEffect>
+            <ScrollEffect className="parent float-right" animate="bounceInRight">
               <div className="">
                 <img className="" src="./images/parent.png" height="100px" alt=""/>
               </div>
-            </div>
+            </ScrollEffect>
             <div className="clean"></div>
-            <div className="student-icon float-left">
+
+
+            <ScrollEffect className="student-icon float-left" animate="fadeInLeft">
               <div className="item">
                 <img src="./images/lecture.png" alt="" width="60px" height="60px"/>
                 <span><FormattedHTMLMessage id="studentHelpOne"/></span>
@@ -88,8 +57,10 @@ class Home extends React.Component {
                 <img src="./images/jobs.png" alt="" width="60px" height="60px"/>
                 <span><FormattedHTMLMessage id="studentHelpFour"/></span>
               </div>
-            </div>
-            <div className="parent-icon float-right">
+            </ScrollEffect>
+
+
+            <ScrollEffect className="parent-icon float-right" animate="fadeInRight">
               <div className="item">
                 <img src="./images/lecture.png" alt="" width="60px" height="60px"/>
                 <span><FormattedHTMLMessage id="teacherHelpOne"/></span>
@@ -106,8 +77,7 @@ class Home extends React.Component {
                 <img src="./images/jobs.png" alt="" width="60px" height="60px"/>
                 <span><FormattedHTMLMessage id="teacherHelpFour"/></span>
               </div>
-
-            </div>
+            </ScrollEffect>
           </div>
         </div>
         <div className="clean"></div>
@@ -116,10 +86,10 @@ class Home extends React.Component {
 
         <div className="dizcuss">
           <div className="container">
-            <h1><FormattedMessage id="parentSay"/></h1>
-            <div className="teacher-list">
-              <ul ref={(d) => this._dizcuss = d}>
-                <li className={discuzzClass}>
+            <ScrollEffect className="teacher-list" animate="fadeIn">
+              <h1><FormattedMessage id="parentSay"/></h1>
+              <ul>
+                <li>
                   <span className="title"><FormattedMessage id="parentA"/></span>
                   <span className="subtitle"><FormattedMessage id="parentTitleA"/></span>
                   <span className="content">
@@ -128,7 +98,7 @@ class Home extends React.Component {
                   <img className="quoteup" src="../images/quote.jpg" />
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
-                <li className={discuzzClass}>
+                <li>
                   <span className="title"><FormattedMessage id="parentB"/></span>
                   <span className="subtitle"><FormattedMessage id="parentTitleB"/></span>
                   <span className="content">
@@ -137,7 +107,7 @@ class Home extends React.Component {
                   <img className="quoteup" src="../images/quote.jpg" />
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
-                <li className={discuzzClass}>
+                <li>
                   <span className="title"><FormattedMessage id="parentC"/></span>
                   <span className="subtitle"><FormattedMessage id="parentTitleC"/></span>
                   <span className="content">
@@ -147,14 +117,16 @@ class Home extends React.Component {
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
               </ul>
-            </div>
+            </ScrollEffect>
+
+
 
             <div className="clean"></div>
 
-            <h1><FormattedMessage id="studentSay"/></h1>
-            <div className="teacher-list">
+            <ScrollEffect className="teacher-list" animate="fadeIn">
+              <h1><FormattedMessage id="studentSay"/></h1>
               <ul>
-                <li className={discuzzClass}>
+                <li>
                   <span className="title"><FormattedMessage id="studentD"/></span>
                   <span className="subtitle"><FormattedMessage id="studentTitleD"/></span>
                   <span className="content">
@@ -163,7 +135,7 @@ class Home extends React.Component {
                   <img className="quoteup" src="../images/quote.jpg" />
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
-                <li className={discuzzClass}>
+                <li>
                   <span className="title"><FormattedMessage id="studentE"/></span>
                   <span className="subtitle"><FormattedMessage id="studentTitleE"/></span>
                   <span className="content">
@@ -172,7 +144,7 @@ class Home extends React.Component {
                   <img className="quoteup" src="../images/quote.jpg" />
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
-                <li className={discuzzClass}>
+                <li>
                   <span className="title"><FormattedMessage id="studentF"/></span>
                   <span className="subtitle"><FormattedMessage id="studentTitleF"/></span>
                   <span className="content">
@@ -182,10 +154,10 @@ class Home extends React.Component {
                   <img className="quoteDown" src="../images/quote2.jpg" />
                 </li>
               </ul>
-            </div>
+            </ScrollEffect>
           </div>
-          <div className="clean"></div>
         </div>
+        <div className="clean"></div>
         <Partner   />
       </article>
     )
