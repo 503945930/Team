@@ -16,15 +16,15 @@ class Home extends React.Component {
         <div className="banner animated fadeIn">
           <Gallery/>
         </div>
-        <div className="intro">
+        <div className="intro animated fadeIn">
           <div className="container">
-            <ScrollEffect className="home-logo" animate="fadeIn">
+            <div className="home-logo animated fadeIn" >
               <img src="./images/logo.png" alt="" height="70px"/>
-            </ScrollEffect>
+            </div>
 
-            <ScrollEffect className="value prop" animate="fadeInUp">
+            <div className="value prop animated fadeIn">
               <span><FormattedMessage id="webFunction"/></span>
-            </ScrollEffect>
+            </div>
             <div className="clean"></div>
 
             <ScrollEffect className="student float-left" animate="bounceInLeft">
@@ -158,7 +158,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="clean"></div>
-        <Partner   />
+        <Partner/>
       </article>
     )
   }
