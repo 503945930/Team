@@ -2,7 +2,9 @@ import React, {Component} from "react"
 import {Link} from "react-router"
 import {FormattedMessage} from "react-intl"
 import Gallery from "./Gallery"
-import CookieUtils from "../utils/CookieUtils"
+import CookieUtils from "../utils/CookieUtils";
+import {connect} from 'react-redux';
+import { changeLanguage } from '../actions/languageactions'
 
 class Header extends Component {
   constructor(props) {
@@ -45,6 +47,9 @@ class Header extends Component {
   }
 
   render() {
+
+    const {language} = this.props;
+    console.log("logo_i18n",language);
     return (
       <header className="site-header navbar navbar-static-top bs-docs-nav " id="top" role="banner">
         <div className="container">
@@ -67,6 +72,12 @@ class Header extends Component {
           <li className="icon">
             <a href="#" onTouchTap={this.handleTouchTap.bind(this)} style={{fontSize:15}}>☰</a>
           </li>
+          <li>
+            <a href="#" onTouchTap = {this.handleLanghOnclick.bind(this,'zh')} >中文</a>
+          </li>
+          <li>
+            <a href="#" onTouchTap = {this.handleLanghOnclick.bind(this,'en')} >英文</a>
+          </li>
         </ul>
       </div>
       </header>
@@ -74,4 +85,22 @@ class Header extends Component {
   }
 }
 
-export default Header
+const mapStateToProps = (state) => {
+  console.log("header",state);
+  return {
+    language:state.Guest.language
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    changeLanguage:(lang)=>{
+        dispatch(changeLanguage(lang))
+    }
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Header)

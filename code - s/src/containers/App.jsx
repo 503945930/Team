@@ -24,19 +24,7 @@ class App extends Component {
     }
 
     handleLanghOnclick(locale, e) {
-        e.preventDefault();
-        //  document.cookie = "site-lang" + "=" + "zh"  + "; path=/";
-        //writeCookie("site-lang", "zh");
-        // let Days = 30;
-        // let exp = new Date();
-        // exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
-        // document.cookie = "site-lang" +
-        //     "=" + escape(locale) + ";expires=" + exp.toGMTString();
 
-
-        CookieUtils.writeCookie("site-lang", "zh");
-        window.location.reload();
-        //console.log(document.cookie);
     }
 
     render() {
