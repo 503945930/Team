@@ -48,6 +48,9 @@ class Footer extends Component {
               <FormattedMessage id='footerCopyRight'/></a>
             <img src="./images/logo.png" height="60px" alt=""/></div>
         </div>
+        <div className = "qrcode">
+          <img src="./images/qrcode.jpg" width="100px" height="100px"  />
+        </div>
       </footer>
 
     )

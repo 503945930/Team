@@ -310,6 +310,7 @@ ul.topnav li.icon {display: none;}
 .site-footer {
   background: #01152a;
   opacity: 80%;
+  position: relative;
 }
 .site-footer .footer {
   width: 90%;
@@ -354,4 +355,10 @@ ul.topnav li.icon {display: none;}
 .site-footer .copyright a {
   font-size: 18px;
   color: #AFA9A9;
+}
+
+.site-footer .qrcode{
+  position: absolute;
+  bottom: 20px;
+  right: 100px
 }
