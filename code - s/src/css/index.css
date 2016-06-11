@@ -341,7 +341,7 @@ ul.topnav li.icon {display: none;}
 .site-footer .footer ul li a span{
   color: #AFA9A9 !important;
   line-height: 20px;
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 .site-footer .copyright img {
   display: block;
@@ -353,7 +353,7 @@ ul.topnav li.icon {display: none;}
   padding-bottom: 10px;
 }
 .site-footer .copyright a {
-  font-size: 18px;
+  font-size: 14px;
   color: #AFA9A9;
 }
 
