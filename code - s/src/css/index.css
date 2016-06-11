@@ -114,6 +114,12 @@ ul.topnav li.icon {display: none;}
   margin-bottom: 0 !important;
 }
 
+@media screen and (max-width:767px)
+{
+    a.slick-arrow{
+    display:none !important;
+    }
+}
 /*intro*/
 
 .site-main .intro {
