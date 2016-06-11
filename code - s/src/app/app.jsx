@@ -55,19 +55,33 @@ addLocaleData([
 //   }
 // }
 
-console.log("m-console.lg");
 
 
-let intl = localeZh;
-if (CookieUtils.getCookieByName("site-lang") === "zh") {
-  intl = localeZh;
-}
-//console.log(CookieUtils.getCookieByName("site-lang"));
 
-// if((navigator.language || navigator.browserLanguage).toLowerCase() !== "zh-cn"){
-//     console.log("!==zh-cn");
-//     intl = localeEn;
+let intl = "";
+
+// if (CookieUtils.getCookieByName("site-lang") === "zh") {
+//   intl = localeZh;
 // }
+console.log("site-lang",CookieUtils.getCookieByName("site-lang"));
+console.log((navigator.language || navigator.browserLanguage).toLowerCase());
+if(CookieUtils.getCookieByName("site-lang") === null ){
+  if((navigator.language || navigator.browserLanguage).toLowerCase() !== "zh-cn"){
+      intl = localeEn;
+  }else {
+      intl = localeZh;
+  }
+}else {
+    if(CookieUtils.getCookieByName("site-lang") === 'zh'){
+      intl = localeZh;
+    }else {
+      intl = localeEn;
+    }
+}
+
+
+
+
 
 // Render the main app react component into the app div.
 // For more details see: https://facebook.github.io/react/docs/top-level-api.html#react.render

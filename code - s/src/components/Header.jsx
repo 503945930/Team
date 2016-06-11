@@ -49,13 +49,17 @@ class Header extends Component {
   render() {
 
     const {language} = this.props;
-    console.log("logo_i18n",language);
+    const logo_template = language === 'zh' ? (
+       <img src="./images/logo.png" alt="" height="40px"/>
+    ):(
+        <img src="./images/logo.png" alt="" height="40px"/>
+    )
     return (
       <header className="site-header navbar navbar-static-top bs-docs-nav " id="top" role="banner">
         <div className="container">
         <div className="logo float-left">
           <Link to="/">
-            <img src="./images/logo.png" alt="" height="40px"/>
+            {logo_template}
           </Link>
         </div>
 
@@ -76,7 +80,7 @@ class Header extends Component {
             <a href="#" onTouchTap = {this.handleLanghOnclick.bind(this,'zh')} >中文</a>
           </li>
           <li>
-            <a href="#" onTouchTap = {this.handleLanghOnclick.bind(this,'en')} >英文</a>
+            <a href="#" onTouchTap = {this.handleLanghOnclick.bind(this,'en')} >English</a>
           </li>
         </ul>
       </div>

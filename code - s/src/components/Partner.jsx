@@ -10,7 +10,7 @@ class Partner extends Component {
     return (
       <div className="partner">
         <div className="container">
-          <span>合作伙伴</span>
+          <FormattedMessage id="partner" />
           <div className="partner-list">
             <div className="item">
               <img src="./images/wtct.png" alt="" height="42px"/>

@@ -7,6 +7,7 @@ import { fetchGuestMessage } from '../actions/messageactions';
 import GuestItem from '../components/GuestItem';
 
 
+
 class Guest extends React.Component {
   constructor(props){
     super(props)
@@ -23,11 +24,13 @@ class Guest extends React.Component {
 
   render(){
     const {guestDetail} = this.props;
+
+
     const guestList = guestDetail ? guestDetail.map(elem => {
       // body...
 
-      return   <GuestItem  key={elem.fields.id} titleCn={elem.fields.title_cn}
-        image={elem.fields.photo[0].thumbnails.large.url} nameEn={elem.fields.name_cn}   />
+      return   <GuestItem  key={elem.fields.id} titleCn={elem.fields.title_cn}  titleEn={elem.fields.title_en}
+        image={elem.fields.photo[0].thumbnails.large.url} nameCn={elem.fields.name_cn}  nameEn={elem.fields.name_en}  />
 
     }):null;
 

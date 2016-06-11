@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import Gallery from '../components/Gallery'
 import Partner from '../components/Partner';
 import ScrollEffect from '../js/scroll-effects.jsx';
+import CookieUtils from "../utils/CookieUtils";
+
 
 class Home extends React.Component {
 
@@ -14,6 +16,22 @@ class Home extends React.Component {
 
   //"animated fadeInUp"
   render() {
+
+    const language = CookieUtils.getCookieByName("site-lang");
+
+    const student = language === 'zh' ? (
+      <img src="./images/student.png" height="100px" alt=""/>
+    ):(
+      <img src="./images/student_en.png" height="100px" alt=""/>
+    )
+
+    const teacher = language === 'zh' ? (
+      <img className="" src="./images/parent.png" height="100px" alt=""/>
+    ):(
+      <img className="" src="./images/parent_en.png" height="100px" alt=""/>
+    )
+
+
 
     return (
       <article className="site-main">
@@ -33,12 +51,13 @@ class Home extends React.Component {
 
             <ScrollEffect className="student float-left" animate="bounceInLeft">
               <div className="">
-                <img src="./images/student.png" height="100px" alt=""/>
+                {student}
+
               </div>
             </ScrollEffect>
             <ScrollEffect className="parent float-right" animate="bounceInRight">
               <div className="">
-                <img className="" src="./images/parent.png" height="100px" alt=""/>
+                {teacher}
               </div>
             </ScrollEffect>
             <div className="clean"></div>
