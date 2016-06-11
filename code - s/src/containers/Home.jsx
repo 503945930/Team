@@ -8,6 +8,10 @@ import ScrollEffect from '../js/scroll-effects.jsx';
 
 class Home extends React.Component {
 
+  constructor(props){
+    super(props)
+  }
+
   //"animated fadeInUp"
   render() {
 

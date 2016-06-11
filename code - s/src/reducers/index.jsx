@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import {GETMESSAGESUCCESS} from '../constants/index'
+import {GETMESSAGESUCCESS,CHANGE_LANGUAGE} from '../constants/index'
 import assign from 'object-assign'
 
 const initialState = {
+  language:''
 }
 
 
@@ -12,10 +13,14 @@ function Guest(state = initialState,action){
     case GETMESSAGESUCCESS:
       return assign({},state,{guestDetail:action.data.records})
       break;
+    case CHANGE_LANGUAGE:
+      return assign({},state,{language:action.language})
+      break;
     default:
       return state;
 
   }
+
 }
 
 const rootReducer = combineReducers({
