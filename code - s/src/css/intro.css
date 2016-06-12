@@ -10,7 +10,7 @@
 }
 
 .site-main .intro-list{
-  width: 80%;
+  width: 75%;
   margin: 31px auto;
   height: auto;
 
@@ -24,7 +24,8 @@
 .site-main .intro-list span{
   color: #4a4a4a4a;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 30px;
+  font-family: sans-serif;
 }
 
 

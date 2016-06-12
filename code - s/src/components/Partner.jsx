@@ -13,25 +13,25 @@ class Partner extends Component {
           <FormattedMessage id="partner" />
           <div className="partner-list">
             <div className="item">
-              <img src="./images/wtct.png" alt="" height="42px"/>
+              <img src="./images/wtct.png" alt="" />
             </div>
             <div className="item">
-              <img src="./images/zkgg.png" alt=""   height="42px"/>
+              <img src="./images/zkgg.png" alt="" />
             </div>
             <div className="item">
-              <img src="./images/china-huskies.png" alt="" height="42px"/>
+              <img src="./images/china-huskies.png" alt=""/>
             </div>
             <div className="item">
-              <img src="./images/zkzb.png" alt=""  height="42px"/>
+              <img src="./images/zkzb.png" alt="" />
             </div>
             <div className="item">
-              <img src="./images/oz.png" alt="" height="30px" width="440px"/>
+              <img src="./images/oz.png" alt="" />
             </div>
             <div className="item">
-              <img src="./images/CUK-logo.png"  alt="" height="42px"/>
+              <img src="./images/CUK-logo.png"  alt="" />
             </div>
             <div className="item">
-              <img src="./images/asterRide.png" alt="" height="42px"/>
+              <img src="./images/asterRide.png" alt="" />
             </div>
           </div>
         </div>

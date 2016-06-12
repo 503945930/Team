@@ -19,7 +19,6 @@ const Intro = () => (
       </div>
     </div>
     <Partner/>
-
   </article>
 )
 export default Intro;

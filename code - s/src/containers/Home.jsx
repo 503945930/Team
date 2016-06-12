@@ -20,15 +20,15 @@ class Home extends React.Component {
     const language = CookieUtils.getCookieByName("site-lang");
 
     const student = language === 'zh' ? (
-      <img src="./images/student.png" height="100px" alt=""/>
+      <img src="./images/student.png"  alt=""/>
     ):(
-      <img src="./images/student_en.png" height="100px" alt=""/>
+      <img src="./images/student_en.png"  alt=""/>
     )
 
     const teacher = language === 'zh' ? (
-      <img className="" src="./images/parent.png" height="100px" alt=""/>
+      <img className="" src="./images/parent.png"  alt=""/>
     ):(
-      <img className="" src="./images/parent_en.png" height="100px" alt=""/>
+      <img className="" src="./images/parent_en.png" alt=""/>
     )
 
 
@@ -50,20 +50,20 @@ class Home extends React.Component {
             <div className="clean"></div>
 
             <ScrollEffect className="student float-left" animate="bounceInLeft">
-              <div className="">
+              <div className="pic">
                 {student}
 
               </div>
             </ScrollEffect>
             <ScrollEffect className="parent float-right" animate="bounceInRight">
-              <div className="">
+              <div className="pic">
                 {teacher}
               </div>
             </ScrollEffect>
             <div className="clean"></div>
+         <div className="icon-container">
 
-
-            <ScrollEffect className="student-icon float-left" animate="fadeInLeft">
+            <ScrollEffect className="icon float-left" animate="fadeInLeft">
               <div className="item">
                 <img src="./images/lecture.png" alt="" width="60px" height="60px"/>
                 <span><FormattedHTMLMessage id="studentHelpOne"/></span>
@@ -83,7 +83,7 @@ class Home extends React.Component {
             </ScrollEffect>
 
 
-            <ScrollEffect className="parent-icon float-right" animate="fadeInRight">
+            <ScrollEffect className="icon float-right" animate="fadeInRight">
               <div className="item">
                 <img src="./images/lecture.png" alt="" width="60px" height="60px"/>
                 <span><FormattedHTMLMessage id="teacherHelpOne"/></span>
@@ -101,6 +101,7 @@ class Home extends React.Component {
                 <span><FormattedHTMLMessage id="teacherHelpFour"/></span>
               </div>
             </ScrollEffect>
+            </div>
           </div>
         </div>
         <div className="clean"></div>

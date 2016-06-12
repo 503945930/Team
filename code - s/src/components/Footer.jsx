@@ -15,13 +15,13 @@ class Footer extends Component {
               <span><FormattedMessage id='footerCompany'/></span>
               <ul>
                 <li>
-                  <a href="#"><FormattedMessage id='footerLinkIntro'/></a>
+                  <a href="intro"><FormattedMessage id='footerLinkIntro'/></a>
                 </li>
                 <li>
-                  <a href="#"><FormattedMessage id='footerLinkAbout'/></a>
+                  <a href="about"><FormattedMessage id='footerLinkAbout'/></a>
                 </li>
                 <li>
-                  <a href="#"><FormattedMessage id='footerLinkGuest'/></a>
+                  <a href="guest"><FormattedMessage id='footerLinkGuest'/></a>
                 </li>
               </ul>
             </div>
@@ -43,13 +43,19 @@ class Footer extends Component {
               </ul>
             </div>
           </div>
+
           <div className="copyright">
-            <a href="">&copy;
-              <FormattedMessage id='footerCopyRight'/></a>
-            <img src="./images/logo.png" height="60px" alt=""/></div>
-        </div>
-        <div className = "qrcode">
-          <img src="./images/qrcode.jpg" width="100px" height="100px"  />
+
+            <img src="./images/logo.png" height="60px" alt="" id="logo"/>
+
+            <img src="./images/qrcode.jpg" width="100px" height="100px"/>
+          </div>
+
+          <div className="copyright-line text-align:center;">
+            &copy;
+             <FormattedMessage id='footerCopyRight'/>
+          </div>
+
         </div>
       </footer>
 
