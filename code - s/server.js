@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080
 // //    const publicPath = express.static(path.join(__dirname, '../public'))
      const srcPath = express.static(path.join(__dirname, 'build'))
 //
-     app.use('/', srcPath)
+     app.use('*', srcPath)
 //     app.get('/', function (_, res) { res.sendFile(indexPath) })
 
 
