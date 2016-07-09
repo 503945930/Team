@@ -1,7 +1,7 @@
 ##　使用方法
 
     git clone https://github.com/503945930/Team.git
-    cd code/
+    cd code-s/
     npm i
     npm run start
 
